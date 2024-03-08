@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Android";
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+:root{
+    --cor01: #096e43;
+    --cor02: #00b365;
+    --cor03: #96f7b1;
+    --cor04: #d1e6cd;
+    --cor05: #B9FAF5;
+    --cor06: #02ACDE;
+    --cor07: #3BB9DB;
+    --cor08: #2b798f;
+
+    --fonte-titulo: "Android", "times new roman" ,serif;
+    --fonte-padrao: arial, verdana, sans-serif;
+    --fonte-subtitulo: 'Protest Strike', arial;
+}
+
+*{          /* configuração global do css */
+    margin: 0px;
+    padding: 0px;
+}
+
+.externo::after {
+    content: '\00A0\1F517';
+}
+
+body {
+    background-color: var(--cor04);
+    font-family: var(--fonte-padrao);
+}
+
+
+body > header {
+    max-width: 1500px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor01));
+    max-height: 2450px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    padding-bottom: 7px;
+}
+
+body > header > h1 {
+    color: var(--cor05);
+    font-family: var(--fonte-subtitulo);
+    text-shadow: 2px 4px 1px rgba(0, 0, 0, 0.308);
+    font-size: 80px;
+    padding-top: 35px;
+    width: 100%;
+    max-width: 933px;
+    margin: auto;
+}
+
+header > p {
+    text-shadow: 2px 4px 1px rgba(0, 0, 0, 0.164);
+    color: var(--cor04);
+    font-family: var(--fonte-subtitulo);
+    font-size: 17px;
+}
+
+nav {
+    max-width: 1500px;
+    min-width: 80px;
+    border-radius: 0px 0px 5px 5px;
+    margin: auto;
+    background-color: var(--cor01);
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0px 0px 0px ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+
+nav > a {
+    padding: 10px;
+    border-radius: 5px;
+    
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor04);
+}
+
+nav > a:hover{
+    background-color: var(--cor05);
+    transition-duration: 0.5s;
+    color: var(--cor08);
+}
+
+main {
+    background-color: #ffffff;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto auto 20px auto;
+    padding: 25px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+
+main img#pequeno {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main img {
+    width: 100%;
+}
+
+main h1 {
+    color: var(--cor01);
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, var(--cor06), transparent);
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+.video {
+    background-color: var(--cor01);
+    padding: 30px;
+    margin: 30px -25px 0px -25px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    font-size: 1.07em;
+    margin: 25px 0px 25px 0px;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor01);
+    font-family: var(--fonte-subtitulo);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor02);
+    font-family: var(--fonte-subtitulo);
+    background-color: var(--cor01);
+    padding: 2px 4px 2px 4px;
+    border-radius: 2px;
+}
+
+strong {
+    color: var(--cor08);
+}
+
+aside {
+    background-color: var(--cor03);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.322);
+    margin-top: 25px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+aside > header > h3 {
+    color: #ffffff;
+    border-radius: 6px 6px 0px 0px;
+    text-align: center;
+    background-color: var(--cor01);
+    padding: 10px;
+    margin: -20px -20px 0px -20px;
+}
+
+footer {
+    background-color: var(--cor01);
+    color: #ffffff;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor02);
+}
