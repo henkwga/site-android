@@ -34,26 +34,27 @@ body {
     font-family: var(--fonte-padrao);
 }
 
-
-body > header {
-    max-width: 1500px;
-    border-radius: 5px 5px 0px 0px;
-    margin: auto;
+body .cabeca {
     background-image: linear-gradient(to bottom, var(--cor03), var(--cor01));
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    padding-bottom: 7p;
+    max-width: 1050px;
+    min-width: 320px;
+    margin: auto;
     max-height: 2450px;
     text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
-    padding-bottom: 7px;
 }
 
-body > header > h1 {
+body > .cabeca  h1 {
     color: var(--cor05);
     font-family: var(--fonte-subtitulo);
     text-shadow: 2px 4px 1px rgba(0, 0, 0, 0.308);
-    font-size: 80px;
+    font-size: 65px;
     padding-top: 35px;
+    max-width: 1050px;
+    min-width: 320px;
     width: 100%;
-    max-width: 933px;
     margin: auto;
 }
 
@@ -66,7 +67,7 @@ header > p {
 
 nav {
     max-width: 1500px;
-    min-width: 80px;
+    min-width: 320px;
     border-radius: 0px 0px 5px 5px;
     margin: auto;
     background-color: var(--cor01);
@@ -92,7 +93,7 @@ nav > a:hover{
 
 main {
     background-color: #ffffff;
-    min-width: 300px;
+    min-width: 320px;
     max-width: 1000px;
     margin: auto auto 20px auto;
     padding: 25px;
@@ -101,6 +102,7 @@ main {
 }
 
 main img#pequeno {
+    min-width: 320px;
     max-width: 350px;
     display: block;
     margin: auto;
@@ -143,6 +145,7 @@ main h2 {
 }
 
 main p {
+    min-width: 320px;
     text-align: justify;
     text-indent: 30px;
     line-height: 1.5em;
@@ -193,6 +196,7 @@ aside > header > h3 {
 }
 
 footer {
+    min-width: 320px;
     background-color: var(--cor01);
     color: #ffffff;
     text-align: center;
@@ -201,4 +205,8 @@ footer {
 footer a {
     text-decoration: none;
     color: var(--cor02);
+}
+
+footer p {
+    min-width: 320px;
 }
